@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>TSP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="lib/utils.js"></script>
+    <script src="lib/main.js"></script>
+</head>
+<body>
+
+    <div class="">
+        <div class="uk-text-center uk-grid-collapse" uk-height-match="target: > div > .uk-card" uk-grid>
+            <!-- <div class="uk-width-1-5@m ">
+                <div class="uk-card uk-card-body uk-background-muted uk-text-left">
+                    <h3>Dostępne operacje: </h3>
+                    <div class="uk-margin">
+                        <small>Ilość punktów: </small>
+                        <form name="registrationForm">
+                           <input type="range" name="numOfPoints" id="numOfPoints" value="16" min="5" max="40" oninput="numLabel.value = numOfPoints.value" >
+                           <output name="numLabel" id="numLabel">16</output>
+                        </form>
+                    </div>
+                    <div class="uk-margin">
+                        <button id="btnReset" class="uk-button uk-button-primary">Reset</button>
+                    </div>
+                    <div class="uk-margin">
+
+                    </div>
+
+
+                </div>
+            </div> -->
+
+            <div class="uk-width-expand@m">
+                <div class="uk-card uk-card-body">
+                    <h1>TSP</h1>
+                    <p>
+                        Tematem mojego projektu jest problem komiwojażera: Poszukiwanie najkrótszej drogi obejmującej wszystkie wierzchołki w grafie (np. miasta) zawierającym 20, 30 węzłów (w przestrzeni 2D), nie wszystkie węzły muszą być ze sobą połączone. Analogia: komiwajażer musi odwiedzić wszystkie miasta podążając jak najkrótszą drogą - wizualizacja graficzna - przy zastosowaniu algorytmu eugenicznego.
+                    </p>
+                    <canvas id="canvas"
+                        width="880" height="660"
+                        style="border:1px solid;">
+
+                    </canvas>
+                </div>
+            </div>
+
+            <div class="uk-width-1-5@m">
+                <div class="uk-card uk-card-body uk-background-muted">
+                    <div class="uk-margin">
+                        <small>Początkowa długość trasy: </small><br />
+                        <span id="firstDistace">-</span>
+                    </div>
+                    <div class="uk-margin">
+                        <small>Najlepsza trasa: </small>
+                        <span id="nextDistace">-</span>
+                    </div>
+                    <!-- <div class="uk-margin">
+                        <small>Nowa trasa: </small>
+                        <span id="newDistace">-</span>
+                    </div> -->
+                    <div class="uk-margin">
+                        <small>Epoka: </small>
+                        <span id="epoches">-</span>
+
+                    </div>
+                    <div class="row">
+                        <span id="status" class="show-grid"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
